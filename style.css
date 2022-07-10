@@ -8,9 +8,8 @@
 /* Etiquetas */
 
 header {
-    font-family: 'Margarine', cursiva;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: #0F2027;
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(./img/pexels-frans-van-heerden-1438832.jpg);
@@ -19,7 +18,8 @@ header {
     position: relative;
 }
 
-body {
+
+/* body {
     font-family: cursive;
 }
 
@@ -42,7 +42,7 @@ nav a:hover {
 li {
     display: inline-block;
     justify-content: flex-end;
-}
+} */
 
 /* Header */
 
@@ -53,6 +53,17 @@ li {
     margin: auto;
     overflow: hidden;
 }
+
+.colors{
+    color:#0F2027;
+
+}
+
+.bs-btn-hover-border-color{
+    color: #000;
+}
+
+
 
 .titulo {
     color: blueviolet;
@@ -154,8 +165,8 @@ main .sobre-nosotros {
 
 .hover-galeria {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     top: 0;
     transform: scale(0);
     background: hsla(273, 91%, 27%, 0.7);
@@ -527,6 +538,9 @@ button:focus {
     color: white;
 }
 
+
+/* seccion acerca de */
+
 .boton-text{
     text-align: center;
     align-self: center;
@@ -560,4 +574,18 @@ button:focus {
         transform: scale(.99);
         box-shadow: 0 0 0 0 rgba(256, 256, 256 , .0);
     }
+}
+
+
+.dropdown-toggle{
+    color: #ffffff;
+}
+
+.navbar-brand{
+    color: #ffffff;
+}
+
+.btn-outline-success{
+    color: white;
+    border: solid 1px #ffffff;
 }
