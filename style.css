@@ -296,50 +296,20 @@ footer {
 
 /* Seccion Comprar */
 
-.buy{
-    padding: 20px;
-}
-
-.buy-text{
-    text-align: center;
-}
-
-.grilla__item {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grilla {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-    grid-auto-rows: minmax(150px, auto);
-    gap: 20px;
-    grid-auto-flow: dense;
-}
-
-img {
-    border-radius: 10px;
-}
-
-
-@media screen and (min-width: 500px) {
-    .wide {
-        grid-column: span 2;
-    }
-
-    .tall {
-        grid-row: span 2;
-    }
-}
-
-img {
+#galery img{
     width: 100%;
-    object-fit: cover;
+    height: 300px;
 }
+
+#galery .col-lg-4{
+    padding: 25px;
+    margin: 0 !important;
+}
+
+#galery img:hover{
+    border: 5px solid #ffffff;
+}
+
 
 /* Formulario de contacto */
 
@@ -602,3 +572,4 @@ button:focus {
     color: white;
     border: solid 1px #ffffff;
 }
+
