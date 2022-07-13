@@ -8,55 +8,15 @@
 /* Etiquetas */
 
 header {
-    width: 100%;
-    height: 500px;
+    font-family: 'Margarine', cursiva;
+    /* width: 100%;
+    height: 600px; */
     background: #0F2027;
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(./img/pexels-frans-van-heerden-1438832.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
-
-.card-img-overlay{
-    /* background-color: #0F2027; */
-    height: 200px;
-}
-
-
-/* body {
-    font-family: cursive;
-}
-
-nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav a {
-    color: white;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-li {
-    display: inline-block;
-    justify-content: flex-end;
-} */
-
-/* Header */
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
 }
 
 .colors{
@@ -68,7 +28,31 @@ li {
     color: #000;
 }
 
+.dropdown-toggle{
+    color: #ffffff;
+}
 
+.navbar-brand{
+    color: #ffffff;
+}
+
+.btn-outline-success{
+    color: white;
+    border: solid 1px #ffffff;
+}
+.form-control{
+    text-align: center;
+}
+
+/* Header */
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
 
 .titulo {
     color: blueviolet;
@@ -91,17 +75,8 @@ header .textos-header {
     color: white;
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Seccion sobre nosotros */
 
-main .sobre-nosotros {
-    padding: 10px 0 20px 0;
-}
 
 .contenedor-sobre-nosotros {
     display: flex;
@@ -132,13 +107,6 @@ main .sobre-nosotros {
     margin-right: 5px;
 }
 
-.contenido-textos {
-    font-family: cursive;
-    padding: 30px 0px 60px 15px;
-    font-weight: 300;
-    text-align: justify;
-}
-
 /* Galeria */
 
 .portafolio {
@@ -149,7 +117,6 @@ main .sobre-nosotros {
 .galeria-port {
     display: flex;
     justify-content: space-evenly;
-    padding: 10px;
 }
 
 .imagen-port {
@@ -191,72 +158,15 @@ main .sobre-nosotros {
     transform: scale(1);
 }
 
-/* Clientes */
-
-.cards {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards .card {
-    background: #0F2027;
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-}
-
-.cards .card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-
-}
-
-.cards .card .contenido-texto-card {
-    width: 60%;
-    color: white;
-}
-
-.cards .card .contenido-texto-card p {
-    font-weight: 300;
-    padding-top: 5px;
-}
-
 /* Nuestros srvicios */
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+}
 
 .about-services {
     background: #f2f2f2;
-    padding-bottom: 30px;
-}
-
-.servicio-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.servicio-ind {
-    width: 28%;
-    text-align: center;
-}
-
-.servicio-ind img {
-    width: 90%;
-    border: cornflowerblue solid 1px;
-    border-radius: 15px;
-}
-
-.servicio-ind h3 {
-    margin: 10px 0;
-}
-
-.servicio-ind p {
-    font-weight: 300;
-    text-align: justify;
 }
 
 /* footer */
@@ -277,15 +187,13 @@ footer {
     border-bottom: 1px solid #ccc;
 }
 
-/* Cuando aplico GRID y lo hago responsive en el footer solo me aparece la direccion!!! */
-
 .content-foot {
     text-align: center;
 }
 
 .content-foot h4 {
     color: white;
-    border-bottom: 3px solid #2C5364;
+    border-bottom: 3px solid #2c5364;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -296,49 +204,23 @@ footer {
 
 /* Seccion Comprar */
 
-.buy{
-    padding: 20px;
+.row p{
+    text-align:start;
 }
 
-.buy-text{
-    text-align: center;
-}
-
-.grilla__item {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grilla {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-    grid-auto-rows: minmax(150px, auto);
-    gap: 20px;
-    grid-auto-flow: dense;
-}
-
-img {
-    border-radius: 10px;
-}
-
-
-@media screen and (min-width: 500px) {
-    .wide {
-        grid-column: span 2;
-    }
-
-    .tall {
-        grid-row: span 2;
-    }
-}
-
-img {
+#galery img {
     width: 100%;
-    object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+}
+
+#galery .col-lg-4 {
+    padding: 15px;
+    margin: 0 !important;
+}
+
+#galery img:hover {
+    border: 5px solid #ffffff;
 }
 
 /* Formulario de contacto */
@@ -366,8 +248,6 @@ textarea {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
 }
 
-
-
 .contacto {
     background: #203a4373;
     color: #fff;
@@ -379,7 +259,6 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
 
 .mensaje {
     grid-column: 1 / 3;
@@ -465,47 +344,6 @@ button:focus {
 }
 
 @media screen and (max-width: 500px) {
-    nav {
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
-
-    nav a {
-        margin-right: 5px;
-    }
-
-    .textos-header h1 {
-        font-size: 35px;
-    }
-
-    .textos-header h2 {
-        font-size: 20px;
-    }
-
-    /* about-us */
-
-    .imagen-about-us {
-        margin-bottom: 60px;
-        width: 99%;
-    }
-
-    .sobre-nosotros .contenido-textos {
-        width: 95%;
-    }
-
-    .imagen-port {
-        width: 99%;
-    }
-
-    /* Clientes */
-
-    .cards .card {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     /* Footer */
 
@@ -519,86 +357,10 @@ button:focus {
     }
 }
 
-
-
-.card img{
+.card-s img{
     width: 15%;
 }
 
-.changeColor{
-    color: #4d0686;
-    font-weight: 900;
-}
-
-.card{
-    text-align: center;
-}
-.card-body{
-    text-align: justify;
-}
-.card-body h5{
-    text-align: start;
-}
-
-.highlighted{
-    font-weight: 900;
-}
-
-.card-title{
-    text-align: center;
-    background-color: #2C5364;
-    border-radius: 15px;
-    color: white;
-}
-
-
-/* seccion acerca de */
-
-.boton-text{
-    text-align: center;
-    align-self: center;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 10px;
-}
-
-.boton{
-    background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
-    color: #ffffff;
-    display: inline-block;
-    padding: 10px 10px;
-    border-radius: .25rem;
-    min-width: 200px;
-    text-decoration: none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
-    animation: pulse 1.5 s infinite;
-}
-
-@keyframes pulse{
-    0%{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256 , .1);
-    }
-    70%{
-        transform: scale(1);
-        box-shadow: 0 0 0 25px rgba(256, 256, 256 , .0);
-    }
-    100%{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256 , .0);
-    }
-}
-
-
-.dropdown-toggle{
-    color: #ffffff;
-}
-
-.navbar-brand{
-    color: #ffffff;
-}
-
-.btn-outline-success{
-    color: white;
-    border: solid 1px #ffffff;
+.dpto{
+    width: 40%;
 }
