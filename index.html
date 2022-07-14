@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
     crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Inmobiliaria GAVI</title>
 </head>
@@ -76,13 +77,13 @@
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
-                    <div class="imagen-port">
+                    <div class="imagen-port" data-aos="fade-up">
                         <img src="./img/img-1.png" alt="">
                         <div class="hover-galeria">
                             <p>Comprar</p>
                         </div>
                     </div>
-                    <div class="imagen-port">
+                    <div class="imagen-port" data-aos="fade-down">
                         <img src="./img/img-2.png" alt=""></a>
                         <div class="hover-galeria">
                             <p>Vender</p>
@@ -154,25 +155,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="contenedor">
-                <h2 class="titulo">Nuestros servicios</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <a href="./Secciones/comprar.html"><img src="img/ilustracion1.webp" alt=""></a>
-                        <h3>Comprar</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, velit!</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <a href="./Secciones/vender.html"><img src="img/ilustracion4.webp" alt=""></a>
-                        <h3>Vender</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, velit!</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <a href="./Secciones/sucursales.html"><img src="img/ilustracion3.webp" alt=""></a>
-                        <h3>Sucursales</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, velit!</p>
-                    </div>
-                </div> -->
         </section>
     </main>
     <footer>
@@ -197,6 +179,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
