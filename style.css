@@ -16,6 +16,7 @@ header {
     background-attachment: fixed;
     position: relative;
 }
+
 h3{
     color: white;
 }
@@ -256,6 +257,37 @@ button:focus {
 
 .acordion-h1 h4{
     padding-bottom: 30px;
+}
+
+/* seccion acerca de */
+
+.sec{
+    background: #fff;
+    padding: 100px;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.us{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bot-sec{
+    display: inline-block;
+    background: #000;
+    color:#fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 /* footer */
