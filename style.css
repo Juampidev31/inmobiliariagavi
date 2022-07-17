@@ -16,8 +16,16 @@ header {
     background-attachment: fixed;
     position: relative;
 }
+h3{
+    color: white;
+}
+
 H5{
     text-align: center;
+}
+
+h6{
+    color: white;
 }
 
 .colors{
@@ -147,6 +155,14 @@ header .textos-header {
     width: 15%;
 }
 
+.card-text{
+    color: #000;
+}
+
+.col-sm-6 p{
+    color: #000;
+}
+
 /* Seccion Comprar */
 
 .row p{
@@ -226,13 +242,21 @@ button:focus {
 /* Seccion unite */
 
 .accordion{
-    width: 50%;
+    width: 70%;
     padding: 1rem;
+    margin: auto;
 }
 .accordion-button{
     width: 100%;
 }
 
+.bg-dark{
+    text-align: center;
+}
+
+.acordion-h1 h4{
+    padding-bottom: 30px;
+}
 
 /* footer */
 
