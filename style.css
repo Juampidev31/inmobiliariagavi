@@ -3,14 +3,9 @@
     margin: 0%;
     padding: 0%;
 }
-/* Etiquetas */
+/* ------------------------------------------------HEADER------------------------------------------------ */
 
 header {
-    font-family: 'Margarine', cursiva;
-    /* width: 100%;
-    height: 600px; */
-    background: #0F2027;
-    background: -webkit-linear-gradient(to right, hwb(198 17% 61%), #203A43, #0F2027);
     background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(./img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
     background-size: cover;
     background-attachment: fixed;
@@ -21,21 +16,8 @@ h3{
     color: white;
 }
 
-H5{
-    text-align: center;
-}
-
 h6{
     color: white;
-}
-
-.colors{
-    color:#0F2027;
-
-}
-
-.bs-btn-hover-border-color{
-    color: #000;
 }
 
 .dropdown-toggle{
@@ -49,26 +31,6 @@ h6{
 .btn-outline-success{
     color: white;
     border: solid 1px #ffffff;
-}
-.form-control{
-    text-align: center;
-}
-
-/* Header */
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.titulo {
-    color: #0F2027;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
 }
 
 header .textos-header {
@@ -85,12 +47,7 @@ header .textos-header {
     color: white;
 }
 
-/* Galeria */
-
-.portafolio {
-    background: #f2f2f2;
-
-}
+/* ------------------------------------------------SECCION PORTFOLIO-------------------------------------- */
 
 .galeria-port {
     display: flex;
@@ -141,7 +98,28 @@ header .textos-header {
     transform: scale(1);
 }
 
-/* Nuestros servicios */
+/* ------------------------------------------------SECCION CLIENTES--------------------------------------- */
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-s img{
+    width: 15%;
+}
+
+/* ----------------------------------------SECCION NUESTROS SERVICIOS--------------------------------------- */
+
+.titulo {
+    color: #0F2027;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 
 .card-img-top{
     width: 100%;
@@ -152,40 +130,11 @@ header .textos-header {
     background: #f2f2f2;
 }
 
-.card-s img{
-    width: 15%;
-}
-
 .card-text{
     color: #000;
 }
 
-.col-sm-6 p{
-    color: #000;
-}
-
-/* Seccion Comprar */
-
-.row p{
-    text-align:start;
-}
-
-#galery img {
-    width: 100%;
-    height: 200px;
-    border-radius: 15px;
-}
-
-#galery .col-lg-4 {
-    padding: 15px;
-    margin: 0 !important;
-}
-
-#galery img:hover {
-    border: 5px solid #ffffff;
-}
-
-/* Formulario de contacto */
+/* SECCION CONTACTO */
 
 .contenedor-contacto {
     max-width: 1170px;
@@ -240,31 +189,36 @@ button:focus {
     outline: 0;
 }
 
-/* Seccion unite */
+/* ------------------------------------------------SECCION COMPRAR----------------------------------------- */
+
+#galery img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+#galery .col-lg-4 {
+    padding: 15px;
+    margin: 0 !important;
+}
+
+#galery img:hover {
+    border: 5px solid #ffffff;
+}
+
+/* SECCION UNITE */
 
 .accordion{
     width: 70%;
     padding: 1rem;
     margin: auto;
 }
-.accordion-button{
-    width: 100%;
-}
 
-.bg-dark{
-    text-align: center;
-}
-
-.acordion-h1 h4{
-    padding-bottom: 30px;
-}
-
-/* seccion acerca de */
+/* ------------------------------------------------SECCION ACERCA DE--------------------------------------- */
 
 .sec{
     background: #fff;
     padding: 100px;
-    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,7 +244,7 @@ button:focus {
     border-radius: 6px;
 }
 
-/* footer */
+/* ------------------------------------------------SECCION FOOTER------------------------------------------ */
 
 footer {
     padding: 60px 0 30px 0;
@@ -318,9 +272,9 @@ footer {
     margin-bottom: 10px;
 }
 
-.content-foot p {
-    color: #000000;
-}
+
+/* ------------------------------------------------MEDIA QUERYS-------------------------------------------- */
+
 
 @media (min-width: 700px) {
     .wrapper {
@@ -358,7 +312,8 @@ footer {
         width: 44%;
     }
 
-    /* Clientes */
+    /* -------------------------------------------MEDIA QUERYS / CLIENTES---------------------------------- */
+
 
     .cards {
         flex-direction: column;
@@ -370,7 +325,7 @@ footer {
         width: 90%;
     }
 
-    /* Servicios */
+    /* ------------------------------------MEDIA QUERYS / NUESTROS SERVICIOS------------------------------- */
 
     .servicio-cont {
         justify-content: center;
@@ -389,7 +344,7 @@ footer {
 
 @media screen and (max-width: 500px) {
 
-    /* Footer */
+    /* -------------------------------------------MEDIA QUERYS / FOOTER------------------------------------ */
 
     .contenedor-footer {
         flex-direction: column;
