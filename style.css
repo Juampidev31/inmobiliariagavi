@@ -3,14 +3,9 @@
     margin: 0%;
     padding: 0%;
 }
-/* Etiquetas */
+/* --------------------------------------------------SECCION HEADER-------------------------------------------------- */
 
 header {
-    font-family: 'Margarine', cursiva;
-    /* width: 100%;
-    height: 600px; */
-    background: #0F2027;
-    background: -webkit-linear-gradient(to right, hwb(198 17% 61%), #203A43, #0F2027);
     background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(./img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
     background-size: cover;
     background-attachment: fixed;
@@ -21,21 +16,16 @@ h3{
     color: white;
 }
 
-H5{
+h4{
+    color: #ccc;
+}
+
+h5{
     text-align: center;
 }
 
 h6{
     color: white;
-}
-
-.colors{
-    color:#0F2027;
-
-}
-
-.bs-btn-hover-border-color{
-    color: #000;
 }
 
 .dropdown-toggle{
@@ -50,28 +40,8 @@ h6{
     color: white;
     border: solid 1px #ffffff;
 }
-.form-control{
-    text-align: center;
-}
 
-/* Header */
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.titulo {
-    color: #0F2027;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-header .textos-header {
+header .textos__header {
     display: flex;
     height: 430px;
     width: 100%;
@@ -80,26 +50,22 @@ header .textos-header {
     text-align: center;
 }
 
-.textos-header h1 {
+.textos__header h1 {
     font-size: 50px;
     color: white;
 }
 
-/* Galeria */
+/* --------------------------------------------------SECCION PORTFOLIO-------------------------------------------------- */
 
-.portafolio {
-    background: #f2f2f2;
-
-}
-
-.galeria-port {
+.galeria__port {
     display: flex;
     justify-content: space-evenly;
+    padding: 15px;
 }
 
-.imagen-port {
-    width: 30%;
-    height: 200px;
+.galeria__port__imagen {
+    width: 40%;
+    height: 300px;
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
@@ -107,14 +73,14 @@ header .textos-header {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 
-.imagen-port img {
+.galeria__port__imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.hover-galeria {
+.galeria__port__imagen__hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -127,23 +93,44 @@ header .textos-header {
     align-items: center;
     flex-direction: column;
 }
-.hover-galeria a{
+.galeria__port__imagen__hover a{
     text-decoration: none;
 }
 
-.hover-galeria p {
+.galeria__port__imagen__hover p {
     color: rgb(5, 5, 5);
     font-size: 2em;
     text-align: center;
 }
 
-.imagen-port:hover .hover-galeria {
+.galeria__port__imagen:hover .galeria__port__imagen__hover {
     transform: scale(1);
 }
 
-/* Nuestros servicios */
+/* --------------------------------------------------SECCION CLIENTES-------------------------------------------------- */
 
-.card-img-top{
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-s img{
+    width: 15%;
+}
+
+/* ------------------------------------------SECCION NUESTROS SERVICIOS------------------------------------------ */
+
+.titulo {
+    color: #0F2027;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card__imagen{
     width: 100%;
     height: 250px;
 }
@@ -152,23 +139,57 @@ header .textos-header {
     background: #f2f2f2;
 }
 
-.card-s img{
-    width: 15%;
-}
-
 .card-text{
     color: #000;
 }
 
-.col-sm-6 p{
-    color: #000;
+/* --------------------------------------------------SECCION FOOTER-------------------------------------------------- */
+
+footer {
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
 }
 
-/* Seccion Comprar */
-
-.row p{
-    text-align:start;
+.contenedor__footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
 }
+
+.content__footer__text {
+    text-align: center;
+}
+
+.content__footer__text h4 {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid #2c5364;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content__footer__text h4{
+    color: rgb(255, 255, 255);
+}
+
+.content__footer__text p{
+    color: #ccc;
+}
+
+/* --------------------------------------------------SECCION CONTACTO-------------------------------------------------- */
+
+.formulario{
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.row{
+    padding: 30px;
+    margin: auto;
+}
+
+/* --------------------------------------------------SECCION COMPRAR-------------------------------------------------- */
 
 #galery img {
     width: 100%;
@@ -185,104 +206,20 @@ header .textos-header {
     border: 5px solid #ffffff;
 }
 
-/* Formulario de contacto */
-
-.contenedor-contacto {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-}
-
-input {
-    width: 100%;
-    border: 1px solid #000;
-    padding: 1em;
-}
-
-textarea {
-    width: 100%;
-    border: 1px solid #000;
-    padding: 1em;
-}
-
-.wrapper {
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
-}
-
-.contacto {
-    background: #203a4373;
-    color: #fff;
-    border-radius: 6px;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.mensaje {
-    grid-column: 1 / 3;
-}
-
-button {
-    background: lightgrey;
-    width: 100%;
-    border: 0;
-    border: 1px solid #000;
-    padding: 1em;
-}
-
-button:hover,
-button:focus {
-    background: #203a4373;
-    outline: 0;
-}
-
-/* Seccion unite */
-
-.accordion{
-    width: 70%;
-    padding: 1rem;
-    margin: auto;
-}
-.accordion-button{
-    width: 100%;
-}
-
-.bg-dark{
-    text-align: center;
-}
-
-.acordion-h1 h4{
-    padding-bottom: 30px;
-}
-
-/* seccion acerca de */
+/* ------------------------------------------------SECCION ACERCA DE------------------------------------------------ */
 
 .sec{
     background: #fff;
-    padding: 100px;
-    /* min-height: 100vh; */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sec .content{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.us{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .bot-sec{
-    display: inline-block;
+    display: flex;
+    width: fit-content;
+    margin: auto;
     background: #000;
     color:#fff;
     padding: 1rem 2rem;
@@ -290,114 +227,39 @@ button:focus {
     border-radius: 6px;
 }
 
-/* footer */
+.us{
+    text-align: start;
+}
 
-footer {
-    padding: 60px 0 30px 0;
+/* --------------------------------------------------SECCION UNITE-------------------------------------------------- */
+
+.accordion{
+    width: 70%;
+    padding: 1rem;
     margin: auto;
-    overflow: hidden;
 }
 
-.contenedor-footer {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.content-foot {
-    text-align: center;
-}
-
-.content-foot h4 {
-    color: rgb(0, 0, 0);
-    border-bottom: 3px solid #2c5364;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content-foot p {
-    color: #000000;
-}
-
-@media (min-width: 700px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .wrapper>* {
-        padding: 2em 2em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    header {
-        background-position: center;
-    }
-
-    .contenedor-sobre-nosotros {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sobre-nosotros .contenido-textos {
-        width: 90%;
-    }
-
-    .imagen-about-us {
-        width: 90%;
-    }
-
-    /* Galeria */
-
-    .imagen-port {
-        width: 44%;
-    }
-
-    /* Clientes */
-
-    .cards {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card {
-        width: 90%;
-    }
-
-    /* Servicios */
-
-    .servicio-cont {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .servicio-ind {
-        width: 100%;
-        text-align: center;
-    }
-
-    .servicio-ind img {
-        width: 90%;
-    }
-}
+/* --------------------------------------------------SECCION FOOTER-------------------------------------------------- */
 
 @media screen and (max-width: 500px) {
 
-    /* Footer */
-
-    .contenedor-footer {
+    .contenedor__footer {
         flex-direction: column;
     }
 
-    .content-foot {
+    .content__footer__text {
         margin-bottom: 20px;
         text-align: center;
     }
 }
+
+
+
+.contenedor__card{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
 
