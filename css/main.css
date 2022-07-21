@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0; }
 
-.header {
-  background: linear-gradient(to right, rgba(44, 83, 99, 0.452), #203a4373, #0F2027), url(../img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
+header {
+  background: linear-gradient(to right, rgba(44, 83, 99, 0.452), #203a4373, #0F2027), url(./img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
@@ -18,6 +18,19 @@
   .textos__header__h1 {
     font-size: 50px;
     color: white; }
+
+h1 {
+  color: #ffffff; }
+
+.dropdown-toggle {
+  color: #ffffff; }
+
+.navbar-brand {
+  color: #ffffff; }
+
+.btn-outline-success {
+  color: white;
+  border: solid 1px #ffffff; }
 
 .contenedor__footer {
   display: flex;
