@@ -159,22 +159,18 @@ footer {
     border-bottom: 1px solid #ccc;
 }
 
-.content__footer__text {
+.contenedor__footer__text {
     text-align: center;
 }
 
-.content__footer__text h4 {
+.contenedor__footer__text h4 {
     color: rgb(255, 255, 255);
     border-bottom: 3px solid #2c5364;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.content__footer__text h4{
-    color: rgb(255, 255, 255);
-}
-
-.content__footer__text p{
+.contenedor__footer__text p{
     color: #ccc;
 }
 
