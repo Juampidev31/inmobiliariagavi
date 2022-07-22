@@ -4,7 +4,7 @@
 }
 
 header {
-    background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(./img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
+    background: linear-gradient(to right, hsla(198, 39%, 28%, 0.452), #203a4373, #0F2027), url(../img/hombre-negocios-crear-casa-diseno-u-hogar_35761-59.png);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -28,6 +28,18 @@ h1{
     color: #ffffff;
 }
 
+h2{
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: #ccc;
+}
+
 .dropdown-toggle{
     color: #ffffff;
 }
@@ -41,17 +53,46 @@ h1{
     border: solid 1px #ffffff;
 }
 
+
+
 .contenedor__footer{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
     border-bottom: 1px solid #ccc;
+
+    &__text{
+        text-align: center;
+        justify-content: center;
+
+        &__h4{
+            color: rgb(255, 255, 255);
+                border-bottom: 3px solid #2c5364;
+                padding-bottom: 5px;
+                margin-bottom: 10px;   
+        }
+
+        &__p{
+            color: #ccc; 
+            text-align: center;
+        }
+    }
+
 }
 
-.contenedor__footer__text h4 {
-    color: rgb(255, 255, 255);
-    border-bottom: 3px solid #2c5364;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.bg-dark{
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .contenedor__footer {
+        flex-direction: column;
+    }
+
+    .content__footer__text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
