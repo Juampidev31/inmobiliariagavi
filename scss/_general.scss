@@ -53,8 +53,6 @@ h4{
     border: solid 1px #ffffff;
 }
 
-
-
 .contenedor__footer{
     display: flex;
     width: 90%;
@@ -81,7 +79,11 @@ h4{
 
 }
 
-.bg-dark{
+.colorFooter{
+    background-color: map-get($colores, "color-footer");
+}
+
+.colorFooter{
     padding: 10px;
 }
 
