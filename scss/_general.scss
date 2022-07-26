@@ -79,11 +79,11 @@ h4{
 
 }
 
-.colorFooter{
-    background-color: map-get($colores, "color-footer");
+.color-header-footer{
+    background-color: map-get($colores, "color-header-footer");
 }
 
-.colorFooter{
+.color-header-footer{
     padding: 10px;
 }
 

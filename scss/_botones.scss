@@ -1,0 +1,16 @@
+@import "./base/extends";
+
+.botonAzul{
+    // @extend %botones;
+    // background-color: blue;
+    // color: white;
+    @include botones (#4e44aa, black
+    )
+}
+
+.botonGris{
+    @extend %botones;
+    background-color: gray;
+    color: white;
+}
+
