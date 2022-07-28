@@ -10,6 +10,14 @@ header {
     position: relative;
 }
 
+.nav-link{
+    color: white;
+}
+
+.navbar-brand{
+    color: white;
+}
+
 .textos__header{
     display: flex;
     height: 430px;
@@ -29,28 +37,16 @@ h1{
 }
 
 h2{
+    color: #ffffff;
+    font-style: italic;
     text-align: center;
 }
 
 h3{
     color: white;
-}
-
-h4{
-    color: #ccc;
-}
-
-.dropdown-toggle{
-    color: #ffffff;
-}
-
-.navbar-brand{
-    color: #ffffff;
-}
-
-.btn-outline-success{
-    color: white;
-    border: solid 1px #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .contenedor__footer{
@@ -76,16 +72,13 @@ h4{
             text-align: center;
         }
     }
-
 }
 
-.colorFooter{
-    background-color: map-get($colores, "color-footer");
-}
-
-.colorFooter{
+.color-header-footer{
+    background-color: map-get($colores, "color-header-footer");
     padding: 10px;
 }
+
 
 @media screen and (max-width: 500px) {
 

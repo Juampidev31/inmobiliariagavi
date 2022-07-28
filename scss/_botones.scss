@@ -1,0 +1,21 @@
+@import "./base/extends";
+
+.boton{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+
+.botonAzul{
+    @include boton(#212529, white)
+}
+
+.botonGris{
+    @extend %boton;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+
