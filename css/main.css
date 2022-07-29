@@ -34,8 +34,8 @@ h2 {
   text-align: center; }
 
 h3 {
-  color: white;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 30px;
   font-weight: 300;
   text-align: center; }
 
@@ -97,6 +97,9 @@ h3 {
   #galery img:hover {
     border: 1px solid #9c9c9c;
     box-shadow: 2px 2px 2px 2px; }
+
+.contenedor H3 {
+  color: black; }
 
 .galeria__port {
   display: flex;
